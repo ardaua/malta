@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style1.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+
+    <title>Тротуарная плитка МАЛЬТА</title>
+</head>
+
+<body>
+
+<header>
+    <div class="block-title cont">
+        <div class="title col-md-6">
+            <h2>МАЛЬТА</h2>
+            <p>тротуарная плитка</p>
+        </div>
+        <div class="phone col-md-6">
+            <p>+38 067 563 74 76</p>
+        </div>
+    </div>
+    <div class="block-menu">
+        <div class="main-img">
+            <img src="img/main_picture/main-img.jpg" alt="main-img">
+        </div>
+
+    </div>
+</header>
+
+<div class="center block-download">
+    <div class="form-decoretion">
+        <form method="POST">
+            <input name="email" type="email" class="Email" maxlength="20" placeholder="Введите ваш E-mail" required />
+            <button type="submit">Скачать прайс</button>
+        </form>
+    </div>
+</div>
+
+<div class="cont center">
+    <h2>Добро пожаловать!</h2>
+
+</div>
+
+<div class="cont">
+    <h2>Privilege</h2>
+</div>
+
+<div>
+    <p>Character</p>
+</div>
+
+<div>
+    <p>Service</p>
+</div>
+
+<div>
+    <p>Order</p>
+</div>
+
+<div>
+    <p>Portfolio</p>
+</div>
+
+<div>
+    <p>Order</p>
+</div>
+
+<div>
+    <p>Do you know</p>
+</div>
+
+<footer>
+    <p>Contact</p>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#up").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+    $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+
+    $(function () {
+        var h = 100, t = $('#ta'), max = t[0].scrollHeight, min = 300;
+        $('.read-next').on('click', function (event) {
+            var H = t.height();
+            if (H == max) {
+                H = min
+            }
+            else if (H + h > max) {
+                H = max
+            }
+            else {
+                H += h
+            }
+            t.height(H);
+            $(this).text(H == max ? 'Скрыть' : 'Посмотреть больше');
+            return false
+        })
+    });
+
+    $(function () {
+        var h = 600, t = $('#ta2'), max = t[0].scrollHeight, min = 600;
+        $('.read-next1').on('click', function (event) {
+            var H = t.height();
+            if (H == max) {
+                H = min
+            }
+            else if (H + h > max) {
+                H = max
+            }
+            else {
+                H += h
+            }
+            t.height(H);
+            $(this).text(H == max ? 'Скрыть' : 'Больше товаров');
+            return false
+        })
+    });
+</script>
+
+<script type="text/javascript">
+    $('#myModal').on('hidden.bs.modal', function (event) {    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+        $('#back-to-top').tooltip('show');
+
+    });
+</script>
+</body>
+</html>
