@@ -10,16 +10,16 @@
 
     <link rel="icon" href="img/favicon.ico">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
 
     <title>Тротуарная плитка МАЛЬТА</title>
 </head>
 
 <body>
 
-<header>
-    <div class="block-title cont">
+<header id="main">
+    <div class="block-title wrapper">
         <div class="title col-md-6">
             <h2>МАЛЬТА</h2>
             <p>тротуарная плитка</p>
@@ -27,64 +27,81 @@
         <div class="phone col-md-6">
             <p>+38 067 563 74 76</p>
         </div>
+        <div class="center block-download">
+            <div class="form-decoretion">
+                <form class="price" method="POST">
+                    <input name="email" type="email" class="email" maxlength="20" placeholder="Введите ваш E-mail" required />
+                    <button class="but-price" type="submit">Скачать прайс</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="block-menu">
+    <div class="block-slider">
+        <div class="block-slider-text">
+            <p>Это не просто работа! Это искуство.</p>
+        </div>
         <div class="main-img">
             <img src="img/main_picture/main-img.jpg" alt="main-img">
         </div>
-
+    </div>
+    <div id="menu" class="block-menu default">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#privilege">Привилегии</a></li>
+                <li><a href="#character">Характеристики</a></li>
+                <li><a href="#service">Услуги</a></li>
+                <li><a href="#order">Заказать</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
-<div class="center block-download">
-    <div class="form-decoretion">
-        <form method="POST">
-            <input name="email" type="email" class="Email" maxlength="20" placeholder="Введите ваш E-mail" required />
-            <button type="submit">Скачать прайс</button>
-        </form>
-    </div>
-</div>
 
-<div class="cont center">
+
+<div class="wrapper center">
     <h2>Добро пожаловать!</h2>
-
 </div>
 
-<div class="cont">
+<div id="privilege" class="wrapper">
     <h2>Privilege</h2>
 </div>
 
-<div>
+<div id="character" class="wrapper">
     <p>Character</p>
 </div>
 
-<div>
+<div id="service" class="wrapper">
     <p>Service</p>
 </div>
 
-<div>
+<div id="order" class="wrapper">
     <p>Order</p>
 </div>
 
-<div>
+<div id="portfolio" class="wrapper">
     <p>Portfolio</p>
 </div>
 
-<div>
+<div class="wrapper">
     <p>Order</p>
 </div>
 
-<div>
+<div id="about" class="wrapper">
     <p>Do you know</p>
 </div>
 
-<footer>
+<footer id="contact" class="wrapper">
     <p>Contact</p>
+
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
-
+<script src="js/fix_menu.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#up").on("click", "a", function (event) {
