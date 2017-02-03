@@ -152,5 +152,31 @@ img {
     opacity: 0.5;
 }
 #privilege {
-    background-color: #ea3624;
+    background-color: #ec4b3b;
+    color: white;
+    font-size: 13px;
+    padding: 2%;
+    margin-top: 65px;
+}
+.upw {
+    text-transform: uppercase;
+}
+.block-about {
+    padding-top: 5%;
+}
+.block-about h2 {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.block-about h3 {
+     font-size: 16px;
+     margin-bottom: 20px;
+     color: #ec4b3b;
+ }
+.block-about p {
+    color: #858585;
+    font-size: 16px;
 }
