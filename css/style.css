@@ -4,7 +4,7 @@
     }
 body {
     font-size: 16px;
-    color: #df2816;
+    color: #ea3624;
     font-weight: normal;
     font-family: one;
     background: #333;
@@ -24,14 +24,11 @@ img {
 .marg {
     margin: 0;
     }
-.main-img {
-     opacity: 0.5;
-    }
 .phone {
     text-align: right;
     }
 .wrapper {
-    padding: 0 10% 0 10%;
+    padding: 0 8% 0 8%;
     }
 .center {
     text-align: center;
@@ -46,7 +43,7 @@ img {
     font-size: 50px;
     text-align: center;
     /*margin-top: 20px;*/
-    color: rgba(255, 0, 0, 0.59);
+    color: #ea3624;
     /*padding: 15px;*/
     }
 .title h2 {
@@ -58,7 +55,7 @@ img {
 .title p {
     text-transform: uppercase;
     font-size: 24px;
-    color: rgba(255, 0, 0, 0.59);
+    color: #ea3624;
     }
 .price {
     /*min-height: 120px;*/
@@ -73,11 +70,12 @@ img {
         color: #fff;
     }
     .price .but-price {
-        background: #df2825;
+        background: #ea3624;
         border: none;
-        padding: 0.5px 6px 5.5px;
-        width: 140px;
+        width: 115px;
         color: #fff;
+        height: 29px;
+        font-size: 13px;
     }
 /*fix menu*/
 #menu {
@@ -85,7 +83,6 @@ img {
     text-align: center;
     line-height: 50px;
     background: rgba(0, 0, 0, 0.74);
-
     /*text-shadow:0 1px 1px black;*/
     /*-moz-border-radius: 5px;*/
     /*-webkit-border-radius:5px;*/
@@ -104,14 +101,12 @@ img {
         padding:5px 10px;
         color:#fff;
         text-decoration: none;
-
         /*-webkit-border-radius: 5px;*/
         /*-moz-border-radius: 5px;*/
         /*border-radius: 5px;*/
     }
     #menu li a:hover {
-        color: #df2825;
-
+        color: #ea3624;
         -webkit-transition-property: color;
         -webkit-transition-duration: 0.5s;
     }
@@ -127,7 +122,6 @@ img {
         top:0; left:0;
         width:100%;
         padding:10px 0;
-
         /*-moz-box-shadow: 5px 5px 20px #333;*/
         /*-webkit-box-shadow: 5px 5px 20px #333;*/
         /*box-shadow: 5px 5px 20px #333;*/
@@ -136,12 +130,24 @@ img {
         background-color: rgba(0, 0, 0, 0.58)!important;
     }
 /*fix menu*/
-.block-slider-text {
-    position: absolute;
-    font-size: 60px;
-    color: #fcf8e3;
-    top: 255px;
+.block-slider .block-slider-text span {
+    font-size: 50px;
+    color: rgba(252, 248, 227, 0.74);
+}
+.block-slider .block-slider-text {
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
-    left: 20%;
-    right: 20%;
+    padding: 0 20%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+}
+.block-slider {
+    position: relative;
+}
+.block-slider .main-img img {
+    opacity: 0.5;
 }
