@@ -48,12 +48,14 @@
         <div class="wrapper">
             <ul>
                 <li><a href="#main">Главная</a></li>
-                <li><a href="#privilege">Привилегии</a></li>
-                <li><a href="#character">Характеристики</a></li>
-                <li><a href="#service">Услуги</a></li>
-                <li><a href="#order">Заказать</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
                 <li><a href="#about">О нас</a></li>
+                <li><a href="#coast">Цены</a></li>
+                <!--<li><a href="#character">Характеристики</a></li>-->
+                <li><a href="#portfolio">Портфолио</a></li>
+                <!--<li><a href="#service">Услуги</a></li>-->
+                <li><a href="#help-info">Полезно знать</a></li>
+                <li><a href="#partner">Партнерство</a></li>
+                <li><a href="#order">Заказать</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
         </div>
@@ -105,33 +107,117 @@
     </div>
 </div>
 
+
+<div id="coast" class="wrapper">
+    <p>Цены</p>
+</div>
+
 <div id="character" class="wrapper">
     <p>Character</p>
-</div>
-
-<div id="service" class="wrapper">
-    <p>Service</p>
-</div>
-
-<div id="order" class="wrapper">
-    <p>Order</p>
 </div>
 
 <div id="portfolio" class="wrapper">
     <p>Portfolio</p>
 </div>
 
-<div class="wrapper">
+<div id="service" class="wrapper">
+    <p>Service</p>
+</div>
+
+<div id="help-info" class="wrapper">
     <p>Order</p>
 </div>
 
-<!--<div id="about" class="wrapper">-->
-    <!--<p>Do you know</p>-->
-<!--</div>-->
+<div id="partner">
+    <div class="wrapper">
+        <div class="block-partner">
+            <h2>Партнерство</h2>
+            <p>Основа деятельности компании «Мальта» – это развитие и ориентация на потребителей.</p>
+            <p>Наше предприятие располагает новым и прогрессивным оборудованием, большими производственными площадями,
+                командой высококвалифицированных специалистов в области производства стройматериалов.</p>
+            <p>Также, мы имеем возможность, изготавливать продукцию на заказ индивидуально под запрос клиента.</p>
+            <p>Наша особенность – это качественная продукция, отвечающая всем требованиям наших клиентов.</p>
+            <p>Стремясь к расширению сетей сбыта продукции компания «Мальта»
+                приглашает к сотрудничеству всех заинтересованных организаций и компаний.</p>
+            <p>Будем рады сотрудничать!</p>
+        </div>
+    </div>
+</div>
 
 <footer id="contact" class="wrapper">
-    <p>Contact</p>
-
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Наши контакты</h2>
+            <div class="form-contact">
+                <p>Адрес: <span>49000, Украина, Днепр ул.Шевченко,22</span></p>
+                <p>Телефон: <span>067 563 74 76</span></p>
+                <p>Почта: <span>radmila.vilner@gmail.com</span></p>
+                <p>Рабочее время: <span>Пн-Пт 9:00-17:00</span></p>
+            </div>
+            <div class="row soc-contact">
+                <a href="#"><img src="img/vk.svg"></a>
+                <a href="#"><img src="img/fb.svg"></a>
+                <a href="#"><img src="img/goo.svg"></a>
+                <a href="#"><img src="img/tw.svg"></a>
+                <a href="#"><img src="img/od.svg"></a>
+            </div>
+        </div>
+        <div id="order" class="col-md-8">
+            <h2>Контактная форма</h2>
+            <div class="form-decoration">
+            <form class="application" action=" application.php" method="POST" name=" application ">
+                <input name="name" class="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+                <input name="email" type="email" class="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required />
+                <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                <button class="applicationButton" type="submit">Заказать</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="row point-sale">
+        <h2>Точки продаж</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>Склад &laquo;Мальта &reg;&raquo;</td>
+                    <td>Украина, г.Новомосковск, ул.Сучкова,117</td>
+                    <td>(067) 563 74 76</td>
+                    <td>пн-пт 08:00-17:00</td>
+                </tr>
+                <tr>
+                    <td>Офис &laquo;Мальта &reg;&raquo;</td>
+                    <td>Украина, г.Днепропетровск, ул.Шевченко,22 </td>
+                    <td>(067) 563 74 76</td>
+                    <td>пн-пт 09:00-17:00</td>
+                </tr>
+                <tr>
+                    <td>Центр тротуарной плитки</td>
+                    <td>Украина, г.Днепропетровск, пр.Воронцова,18б(тер.деревянного рынка)</td>
+                    <td>(067) 633 82 17<br>
+                        (067) 138 86 98<br>
+                        (066) 045 80 55<br>
+                        (056) 734 53 93</td>
+                    <td>пн-пт 09:00-17:00</td>
+                </tr>
+                <tr>
+                    <td>Центр тротуарной плитки - 2</td>
+                    <td>Украина, г.Днепропетровск, ул.Нижнеднепровская,11(Донецкое шоссе возле ТЦ "КАРАВАН")</td>
+                    <td>(067) 138 86 98<br>
+                        (099) 130 75 72</td>
+                    <td>пн-пт 09:00-17:00</td>
+                </tr>
+                <tr>
+                    <td>ООО &laquo;Стройкомфорт&raquo;</td>
+                    <td>Украина, г.Днепропетровск, ул.Строителей,25 оф.205</td>
+                    <td>(056) 373 25 74<br>
+                        (050) 582 80 02</td>
+                    <td>пн-пт 08:00-18:00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
