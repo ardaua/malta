@@ -50,7 +50,7 @@ h3 {
 }
 .phone p {
     font-size: 50px;
-    text-align: center;
+    /*text-align: center;*/
     /*margin-top: 20px;*/
     color: #ea3624;
     /*padding: 15px;*/
@@ -89,7 +89,7 @@ h3 {
 /*fix menu*/
 #menu {
     text-transform: uppercase;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 50px;
     background: rgba(0, 0, 0, 0.74);
     /*text-shadow:0 1px 1px black;*/
@@ -149,7 +149,7 @@ h3 {
     left: 0;
     right: 0;
     margin: 0 auto;
-    text-align: center;
+    /*text-align: center;*/
     padding: 0 20%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -255,9 +255,57 @@ h3 {
     margin-top: 50px;
 }
 .point-sale h2 {
-    text-align: center;
     margin-bottom: 30px;
 }
 #contact h2 {
     margin-bottom: 25px;
+}
+#coast .table-responsive tr td:nth-child(1), th:nth-child(1) {
+    width: 55%;
+}
+#coast .table-responsive tr td:nth-child(2), th:nth-child(2)  {
+    width: 15%;
+}
+#coast .table-responsive tr td:nth-child(3), td:nth-child(4), td:nth-child(5), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+    width: 10%;
+}
+#coast .table-responsive tr td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5),
+th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+.point-sale h2, .phone p, #menu, .block-slider .block-slider-text, #coast .order-phone
+{
+    text-align: center;
+}
+#coast .table-responsive {
+    background-color: rgba(236, 75, 59, 0.38);
+    color: #fff;
+    padding: 30px 30px 0;
+}
+#coast .order-phone {
+    color: #292929;
+}
+#coast .order-phone .applicationTelephone{
+    padding: 5px;
+    border: 3px solid #fff;
+}
+#coast .order-phone .applicationSubmit {
+    padding: 4.5px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+#coast .order-phone .applicationSubmit:hover {
+    background-color: #ec4b3b;
+    border: 2px solid #ec4b3b;
+    color: #fff;
+    /*background-color: #fff;*/
+    /*border: 2px solid #fff;*/
+    /*color: #333;*/
+}
+{
+    background-color: #ec4b3b;
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 4%;
 }
