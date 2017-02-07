@@ -168,7 +168,7 @@ h3 {
     padding: 2%;
     height: 425px;
 }
-.upw {
+.big-letters {
     text-transform: uppercase;
 }
 .block-about {
@@ -294,7 +294,7 @@ th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
-}
+    }
 #coast .order-phone .applicationSubmit:hover {
     background-color: #ec4b3b;
     border: 2px solid #ec4b3b;
@@ -302,10 +302,17 @@ th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child
     /*background-color: #fff;*/
     /*border: 2px solid #fff;*/
     /*color: #333;*/
-}
-{
+    }
+#character {
     background-color: #ec4b3b;
     color: #fff;
     padding-top: 5%;
     padding-bottom: 4%;
-}
+    min-height: 350px;
+    width: 100%;
+    }
+.animate-privilege {
+    position: absolute;
+    /*left: -750px;*/
+    padding-right: 25px;
+    }
