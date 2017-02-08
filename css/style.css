@@ -4,7 +4,7 @@
     }
 body {
     font-size: 16px;
-    color: #ea3624;
+    color: #ec4b3b;
     font-weight: normal;
     font-family: one;
     background: #333;
@@ -52,7 +52,7 @@ h3 {
     font-size: 50px;
     /*text-align: center;*/
     /*margin-top: 20px;*/
-    color: #ea3624;
+    color: #ec4b3b;
     /*padding: 15px;*/
     }
 .title h2 {
@@ -60,6 +60,7 @@ h3 {
      font-size: 60px;
      line-height: 60px;
      font-family: two;
+     color: #ea3624;
     }
 .title p {
     text-transform: uppercase;
@@ -79,12 +80,16 @@ h3 {
         color: #fff;
     }
     .price .but-price {
-        background: #ea3624;
+        background: #ec4b3b;
         border: none;
         width: 115px;
         color: #fff;
         height: 29px;
         font-size: 13px;
+    }
+    .price .but-price:hover {
+        background: #fff;
+        color: #ec4b3b;
     }
 /*fix menu*/
 #menu {
@@ -115,7 +120,7 @@ h3 {
         /*border-radius: 5px;*/
     }
     #menu li a:hover {
-        color: #ea3624;
+        color: #ec4b3b;
         -webkit-transition-property: color;
         -webkit-transition-duration: 0.5s;
     }
@@ -270,7 +275,7 @@ h3 {
     width: 10%;
 }
 #coast .table-responsive tr td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5),
-th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
 .point-sale h2, .phone p, #menu, .block-slider .block-slider-text, #coast .order-phone
 {
     text-align: center;
@@ -316,3 +321,11 @@ th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child
     /*left: -750px;*/
     padding-right: 25px;
     }
+/*--------------------portfolio-slider-------------------------*/
+.portfolio-slider {
+    padding: 0 15%;
+}
+.carousel-inner > .item > img {
+    width: 100%;
+    max-height: 500px;
+}
