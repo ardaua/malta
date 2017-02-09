@@ -347,6 +347,11 @@ h3 {
     color: white;
     font-size: 14px;
 }
+#about img {
+    width: 200px;
+    height: 200px;
+    margin: 1% 0;
+}
 /*--------------------portfolio-slider-------------------------*/
 .portfolio-slider {
     padding: 0 15%;
