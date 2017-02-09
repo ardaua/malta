@@ -22,7 +22,7 @@ img {
     height: auto;
     }
 h1 {
-    font-size: 30px;
+    font-size: 5vw;
 }
 h2 {
     font-size: 25px;
@@ -46,14 +46,11 @@ h3 {
     width: 100%;
     min-height: 175px;
     background: linear-gradient(to top, rgba(74, 74, 74, 0.54), rgba(3, 3, 3, 0.83));
-    padding-top: 25px;
+    padding-top: 2%;
 }
 .phone p {
-    font-size: 50px;
-    /*text-align: center;*/
-    /*margin-top: 20px;*/
+    font-size: 4vw;
     color: #ec4b3b;
-    /*padding: 15px;*/
     }
 .title h2 {
      margin-bottom: 0;
@@ -145,11 +142,7 @@ h3 {
         background-color: rgba(0, 0, 0, 0.58)!important;
     }
 /*fix menu*/
-.block-slider .block-slider-text span {
-    font-size: 50px;
-    color: rgba(252, 248, 227, 0.74);
-}
-.block-slider .block-slider-text {
+.block-slider-text {
     top: 45%;
     left: 0;
     right: 0;
@@ -159,31 +152,46 @@ h3 {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute;
+    color: rgba(252, 248, 227, 0.74);
 }
 .block-slider {
     position: relative;
 }
-.block-slider .main-img img {
+.block-slider .main-img {
     opacity: 0.5;
+    background: url(../img/main_picture/main-img.jpg) no-repeat;
+    width: 100%;
+    min-height: 470px;
+    position: relative;
+    background-size: cover;
+
 }
 #privilege {
     background-color: #ec4b3b;
+    height: 700px;
+    bottom: 0;
+    width: 350px;
+    position: absolute;
+}
+.privilege-text {
     color: white;
-    font-size: 13px;
-    padding: 2%;
-    height: 425px;
+    /*font-size: 13px;*/
+    padding: 0 2% 2%;
 }
 .big-letters {
     text-transform: uppercase;
+}
+#about {
+    background-color: #333;
+    min-height: 700px;
+    width: 100%;
+    position: relative;
 }
 .block-about {
     padding-top: 5%;
 }
 .block-about h2 {
-    text-align: left;
     color: white;
-    font-size: 20px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 .block-about h3 {
@@ -260,25 +268,52 @@ h3 {
 #contact h2 {
     margin-bottom: 25px;
 }
-#coast .table-responsive tr td:nth-child(1), th:nth-child(1) {
-    width: 55%;
+#coast .table-responsive tr td:nth-child(1), #coast .table-responsive tr th:nth-child(1) {
+    width: 45%;
 }
-#coast .table-responsive tr td:nth-child(2), th:nth-child(2)  {
+#coast .table-responsive tr td:nth-child(2), #coast .table-responsive tr th:nth-child(2)  {
     width: 15%;
 }
-#coast .table-responsive tr td:nth-child(3), td:nth-child(4), td:nth-child(5), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
-    width: 10%;
+#coast .table-responsive tr td:nth-child(3), #coast .table-responsive tr td:nth-child(4),
+#coast .table-responsive tr td:nth-child(5), #coast .table-responsive tr th:nth-child(3),
+#coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5) {
+    width: 13%;
 }
-#coast .table-responsive tr td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5),
-th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+#coast .table-responsive tr td:nth-child(1), #coast .table-responsive tr td:nth-child(2),
+#coast .table-responsive tr td:nth-child(3), #coast .table-responsive tr td:nth-child(4),
+#coast .table-responsive tr td:nth-child(5), #coast .table-responsive tr th:nth-child(1),
+#coast .table-responsive tr th:nth-child(2), #coast .table-responsive tr th:nth-child(3),
+#coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5) {
+    border: 1px solid rgb(51, 51, 51);
+}
+#coast .table-responsive tr:nth-child(even) {
+    background-color: rgba(236, 75, 59, 0.14);
+}
+#coast .table-responsive tr:nth-child(odd) {
+    background-color: rgba(236, 75, 59, 0.38);
+}
+.table > thead > tr > th {
+    border: 2px solid rgb(51, 51, 51);
+    color: rgba(255, 255, 255, 0.78);
+}
+#coast .table-responsive tr td:nth-child(2), #coast .table-responsive tr td:nth-child(3),
+#coast .table-responsive tr td:nth-child(4), #coast .table-responsive tr td:nth-child(5),
+#coast .table-responsive tr th:nth-child(2), #coast .table-responsive tr th:nth-child(3),
+#coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5),
 .point-sale h2, .phone p, #menu, .block-slider .block-slider-text, #coast .order-phone
 {
     text-align: center;
 }
+
 #coast .table-responsive {
-    background-color: rgba(236, 75, 59, 0.38);
+    /*background-color: rgba(236, 75, 59, 0.38);*/
     color: #fff;
-    padding: 30px 30px 0;
+    padding: 0 15%;
+    /*padding: 30px 30px 0;*/
+}
+#coast .table-responsive tbody {
+    color: rgba(245, 245, 245, 0.76);
+    font-size: 14px;
 }
 #coast .order-phone {
     color: #292929;
@@ -306,8 +341,12 @@ th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
 .animate-privilege {
     position: absolute;
     /*left: -750px;*/
-    padding-right: 25px;
+    padding-right: 40px;
     }
+.animate-privilege li {
+    color: white;
+    font-size: 14px;
+}
 /*--------------------portfolio-slider-------------------------*/
 .portfolio-slider {
     padding: 0 15%;
@@ -345,8 +384,9 @@ th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
     margin:0 auto;
     width: 100%;
     height: 500px;
-    background: url(../img/main_picture/86764.jpg) no-repeat fixed 50%;
-    opacity: 0.5;
+    padding: 30px;
+    background: url(../img/main_picture/86764.jpg) no-repeat fixed;
+    /*opacity: 0.5;*/
     background-size: cover;
 }
 #service .block-service {
@@ -354,3 +394,29 @@ th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
     color: #fff;
     padding: 7% 8%;
 }
+#coast {
+    /*background-color: white;*/
+}
+
+
+@media screen and (max-width: 767px) {
+    #coast .table-responsive,
+    #contact .table-responsive {
+        border: none;
+    }
+    #coast .table-responsive {
+        padding: 0;
+    }
+    #coast .table-responsive tr td:nth-child(1), #coast .table-responsive tr th:nth-child(1) {
+        width: 25%;
+    }
+    #coast .table-responsive tr td:nth-child(2), #coast .table-responsive tr th:nth-child(2)  {
+        width: 10%;
+    }
+    #coast .table-responsive tr td:nth-child(3), #coast .table-responsive tr td:nth-child(4),
+    #coast .table-responsive tr td:nth-child(5), #coast .table-responsive tr th:nth-child(3),
+    #coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5) {
+        width: 10%;
+    }
+}
+
