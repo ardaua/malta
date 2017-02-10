@@ -239,7 +239,7 @@ h3 {
     margin:0 auto;
     width: 100%;
     height: 500px;
-    padding: 30px;
+    padding: 6% 1%;
     background: url(../img/fix-img.jpg) no-repeat fixed;
     /*opacity: 0.5;*/
     background-size: cover;
@@ -248,6 +248,9 @@ h3 {
     background-color: rgba(236, 75, 59, 0.38);
     color: #fff;
     padding: 7% 8%;
+}
+#partner .block-partner p, #service .block-service p {
+    text-align: center;
 }
 .soc-contact img {
     width: 35px;
@@ -368,7 +371,7 @@ h3 {
     max-height: 500px;
 }
 .carousel-caption {
-    background-color: rgba(245, 245, 245, 0.32);
+    background-color: rgba(236, 75, 59, 0.38);
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 /*--------------------portfolio-slider-------------------------*/
@@ -401,13 +404,54 @@ h3 {
     /*opacity: 0.5;*/
     background-size: cover;
 }
-#service .block-service {
+#service .block-service, #partner .block-partner {
     background-color: rgba(236, 75, 59, 0.38);
     color: #fff;
     padding: 4% 8% 6%;
 }
-#coast, #help-info {
+#coast {
     margin: 6% 0;
+}
+#help-info {
+    background-color: #ec4b3b;
+    padding-bottom: 5%;
+    margin-top: 6%;
+}
+#help-info h2 {
+    padding: 6% 0;
+    color: #fff;
+}
+#help-info img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 9px 5px 35px rgba(0,0,0,0.6);
+}
+#help-info .marg-block-info {
+    margin-bottom: 2%;
+}
+#help-info .block-info .title-info {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5% 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+#help-info .block-info .text-info {
+    color: #fff;
+    font-size: 13px;
+    padding-bottom: 5%;
+}
+#help-info .block-info button {
+    color: #fff;
+    padding: 4px;
+    background-color: #ec4b3b;
+    font-size: 13px;
+    border: 2px solid #fff;
+    letter-spacing: 0.5px;
+}
+#help-info .block-info button:hover {
+    color: #ec4b3b;
+    background-color: #fff;
 }
 .line-red {
     width: 100%;
@@ -432,6 +476,7 @@ h3 {
 #portfolio h2 {
     padding: 6% 0;
 }
+/*------кнопка вверх на главную-------*/
 #back-to-top {
     background-color: rgba(236, 75, 59, 0.62);
     border-radius: 0;
@@ -439,7 +484,32 @@ h3 {
     bottom: 20px;
     right: 20px;
 }
-
+#back-to-top:hover {
+    background-color: #fff;
+    color: #ec4b3b;
+}
+/*------кнопка вверх на главную-------*/
+/*------кнопка узнать больше-------*/
+#ta{
+    height: 380px;
+    transition:all 1s;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+}
+.read-next, .read-next:focus  {
+    color: #ec4b3b;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 7px 5px;
+    font-size: 17px;
+    border: 2px solid #fff;
+}
+.read-next:hover {
+    color: #fff;
+    background-color: #ec4b3b;
+}
+/*------кнопка узнать больше-------*/
 @media screen and (max-width: 767px) {
     #coast .table-responsive,
     #contact .table-responsive {
