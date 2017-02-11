@@ -478,6 +478,23 @@ h3 {
     background-color: #ec4b3b;
 }
 /*------кнопка узнать больше-------*/
+/*----------модальный блок---------*/
+.modal-body p {
+    text-indent: 1.5em;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.modal-body li {
+    font-size: 14px;
+}
+.modal-content {
+    background-color: #333;
+}
+.close, .close:hover {
+    opacity: 1;
+}
 @media screen and (max-width: 767px) {
     #coast .table-responsive,
     #contact .table-responsive {
