@@ -24,16 +24,9 @@
             <h2 class="shadow">МАЛЬТА</h2>
             <p>тротуарная плитка</p>
         </div>
-        <div class="phone col-md-6 col-sm6">
-            <p>+38 067 563 74 76</p>
-        </div>
-        <div class="center block-download">
-            <div class="form-decoretion">
-                <form class="price" method="POST">
-                    <input name="email" type="email" class="email" maxlength="20" placeholder="Введите ваш E-mail" required />
-                    <button class="but-price" type="submit">Скачать прайс</button>
-                </form>
-            </div>
+        <div class="block-phone col-md-6 col-sm6">
+            <p class="phone">+38 067 563 74 76</p>
+            <p class="dload"><a download href="files/test.pdf">скачать прайс</a></p>
         </div>
     </div>
     <div class="block-slider">
@@ -43,20 +36,17 @@
         </div>
     </div>
     <div id="menu" class="block-menu default">
-        <div class="wrapper">
-            <ul>
-                <li><a href="#main">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#coast">Цены</a></li>
-                <!--<li><a href="#character">Характеристики</a></li>-->
-                <li><a href="#portfolio">Портфолио</a></li>
-                <!--<li><a href="#service">Услуги</a></li>-->
-                <li><a href="#help-info">Полезно знать</a></li>
-                <li><a href="#partner">Партнерство</a></li>
-                <li><a href="#order">Заказать</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#coast">Цены</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#character">Достоинства</a></li>
+            <li><a href="#help-info">Полезно знать</a></li>
+            <li><a href="#partner">Партнерство</a></li>
+            <li><a href="#order">Заказать</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
     </div>
 </header>
 
@@ -64,7 +54,7 @@
         <div id="privilege"></div>
         <div class="col-md-4 privilege-text">
             <h2 class="marg-h2">Преимущества</h2>
-            <div class="animate-privilege">
+            <div class="block-privilege">
                 <li>Многолетний опыт работы</li>
                 <li>Индивидуальный подход к клиенту</li>
                 <li>Высококвалифицированные специалисты</li>
@@ -271,6 +261,7 @@
 </div>
 
 <div class="line-red"></div>
+
 <div id="character" class="character1">
     <div class="wrapper">
         <div class="col-md-6">
@@ -374,28 +365,29 @@
     <div style="height: 100%;">
         <div id="ta" style="overflow:hidden;">
 
-            <div id="myModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close exit-order" type="button" data-dismiss="modal">×</button>
-                            <h2 class="modal-title">Очень рады, что Вы хотите оформить заказ!</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p></p>
+            <div class="col-lg-3 col-md-3 marg-block-info">
+                <div>
+                    <img src="img/good1.jpg">
+                </div>
+                <div class="block-info">
+                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                    <button data-toggle="modal" data-target="#myModal1">читать дальше</button>
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel1">Вибролитье или полусухое вибропрессование?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
+                    <!-- Modal -->
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
@@ -405,69 +397,175 @@
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
                     <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
+                    <button data-toggle="modal" data-target="#myModal2">читать дальше</button>
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabe2">Вибролитье или полусухое вибропрессование?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal3">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel3">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal4">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel4">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal5">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel5">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal6">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel6">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal7">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel7">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
+                <div class="col-lg-3 col-md-3 marg-block-info">
+                    <div>
+                        <img src="img/good1.jpg">
+                    </div>
+                    <div class="block-info">
+                        <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
+                        <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                        <button data-toggle="modal" data-target="#myModal8">читать дальше</button>
+                        <!-- Modal -->
+                        <div class="modal fade bs-example-modal-lg" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel8">Вибролитье или полусухое вибропрессование?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 marg-block-info">
-                <div>
-                    <img src="img/good1.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-info">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <button data-toggle="modal" data-target="#myModal">читать дальше</button>
-                </div>
-            </div>
         </div>
         <p><a class="btn btn-primary btn-lg read-next" role="button" href="#">узнать больше</a></p>
     </div>
@@ -592,6 +690,7 @@
         });
     });
 </script>
+
 <script type="text/javascript">
     //посмотреть больше
     $(function () {
@@ -615,8 +714,15 @@
 </script>
 
 <script type="text/javascript">
-    //модальное окно
-    $('#myModal').on('hidden.bs.modal', function (event) {    });
+    //модальные окна
+    $('#myModal1').on('hidden.bs.modal', function (event) {    });
+    $('#myModal2').on('hidden.bs.modal', function (event) {    });
+    $('#myModal3').on('hidden.bs.modal', function (event) {    });
+    $('#myModal4').on('hidden.bs.modal', function (event) {    });
+    $('#myModal5').on('hidden.bs.modal', function (event) {    });
+    $('#myModal6').on('hidden.bs.modal', function (event) {    });
+    $('#myModal7').on('hidden.bs.modal', function (event) {    });
+    $('#myModal8').on('hidden.bs.modal', function (event) {    });
 </script>
 
 <script type="text/javascript">
@@ -641,12 +747,11 @@
     });
 </script>
 
-<script>
-//    $(document).ready(function(){
-        $('.carousel').carousel({
-            interval: 2000
-        })
-//    });
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 2000
+    })
 </script>
+
 </body>
 </html>
