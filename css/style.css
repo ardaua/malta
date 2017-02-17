@@ -180,6 +180,7 @@ h3 {
     .block-about .text2 {
         color: #9e9898;
         font-size: 0.9em;
+        margin-bottom: 0.5em;
     }
     .block-img-about {
         padding-top: 3%;
@@ -371,7 +372,7 @@ h3 {
     width: 100%;
     height: 450px;
     padding: 6% 1%;
-    background: url(../img/main_picture/86764.jpg) no-repeat fixed;
+    background: url(../img/main_picture/7.jpg) no-repeat fixed;
     background-size: cover;
 }
     #service .block-service, #partner .block-partner {
