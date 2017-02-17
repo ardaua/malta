@@ -152,7 +152,7 @@ h3 {
     }
 #privilege {
     background-color: #ec4b3b;
-    height: 700px;
+    height: 825px;
     bottom: 0;
     width: 350px;
     position: absolute;
@@ -163,7 +163,7 @@ h3 {
 }
 #about {
     background-color: #333;
-    min-height: 700px;
+    min-height: 825px;
     width: 100%;
     position: relative;
 }
@@ -179,7 +179,7 @@ h3 {
     }
     .block-about .text2 {
         color: #9e9898;
-        font-size: 14px;
+        font-size: 0.9em;
     }
     .block-img-about {
         padding-top: 3%;
@@ -242,9 +242,11 @@ h3 {
         width: 25%;
     }
     #contact .table-responsive tr td:nth-child(2) {
-        width: 45%;
+        width: 42%;
     }
-    #contact .table-responsive tr td:nth-child(3),
+    #contact .table-responsive tr td:nth-child(3){
+        width: 18%;
+    }
     #contact .table-responsive tr td:nth-child(4) {
         width: 15%;
     }
@@ -328,16 +330,14 @@ h3 {
     }
 .block-privilege {
     position: absolute;
-    padding-right: 40px;
+    width: 330px;
     }
 .block-privilege li {
     color: white;
     font-size: 14px;
 }
 #about img {
-    width: 200px;
-    height: 200px;
-    margin: 1% 0;
+    height: 150px;
 }
 /*--------------------portfolio-slider-------------------------*/
 .portfolio-slider {
@@ -395,6 +395,7 @@ h3 {
     }
     #help-info .marg-block-info {
         margin-bottom: 2%;
+        height: 360px;
     }
     #help-info .block-info .title-info {
         color: #fff;
@@ -476,6 +477,9 @@ h3 {
 .read-next:hover {
     color: #fff;
     background-color: #ec4b3b;
+}
+.but-read-next {
+    margin-top: 1%;
 }
 /*------кнопка узнать больше-------*/
 /*----------модальный блок---------*/
