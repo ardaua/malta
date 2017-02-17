@@ -513,29 +513,7 @@ h3 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-@media screen and (max-width: 767px) {
-    #coast .table-responsive,
-    #contact .table-responsive {
-        border: none;
-    }
-    #coast .table-responsive {
-        padding: 0;
-    }
-    #coast .table-responsive tr td:nth-child(1), #coast .table-responsive tr th:nth-child(1) {
-        width: 25%;
-    }
-    #coast .table-responsive tr td:nth-child(2), #coast .table-responsive tr th:nth-child(2)  {
-        width: 10%;
-    }
-    #coast .table-responsive tr td:nth-child(3), #coast .table-responsive tr td:nth-child(4),
-    #coast .table-responsive tr td:nth-child(5), #coast .table-responsive tr th:nth-child(3),
-    #coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5) {
-        width: 10%;
-    }
-    #coast .order-phone .applicationSubmit {
-        font-size: 11px;
-    }
-}
+
 @media screen and (max-width: 991px) {
     .block-phone .phone{
         margin-bottom: 12px;
@@ -581,5 +559,68 @@ h3 {
     }
     .block-title {
         min-height: 123px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #coast .table-responsive,
+    #contact .table-responsive {
+        border: none;
+    }
+    #coast .table-responsive tbody {
+        font-size: 12px;
+    }
+    #coast .table-responsive {
+        padding: 0;
+    }
+    /*#coast .table-responsive tr td:nth-child(1), #coast .table-responsive tr th:nth-child(1) {*/
+        /*width: 25%;*/
+    /*}*/
+    /*#coast .table-responsive tr td:nth-child(2), #coast .table-responsive tr th:nth-child(2)  {*/
+        /*width: 10%;*/
+    /*}*/
+    /*#coast .table-responsive tr td:nth-child(3), #coast .table-responsive tr td:nth-child(4),*/
+    /*#coast .table-responsive tr td:nth-child(5), #coast .table-responsive tr th:nth-child(3),*/
+    /*#coast .table-responsive tr th:nth-child(4), #coast .table-responsive tr th:nth-child(5) {*/
+        /*width: 10%;*/
+    /*}*/
+    #coast .order-phone .applicationSubmit {
+        font-size: 11px;
+    }
+    .wrapper {
+        padding: 2% 1% 0;
+    }
+    .title h2 {
+        font-size: 52px;
+    }
+    .title p {
+        font-size: 20px;
+    }
+    .dload a {
+        padding: 10px;
+    }
+    .block-phone .dload {
+        text-align: right;
+    }
+    .block-slider .main-img {
+        min-height: 425px;
+    }
+    #menu.default {
+        height: 104px;
+        margin-top: -114px;
+    }
+    .img-character1, .img-character2 {
+        margin-top: 50px;
+    }
+    #service {
+        height: 510px;
+    }
+    #ta {
+        height: 354px;
+    }
+    #partner {
+        height: 565px;
+    }
+    .point-sale h2{
+        margin-left: 3%;
     }
 }
