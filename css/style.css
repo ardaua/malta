@@ -410,7 +410,7 @@ h3 {
         position: absolute;
         top: 0;
     }
-    #help-info .block-info button {
+    #help-info .block-info .but-open-modal {
         color: #fff;
         padding: 4px;
         background-color: #ec4b3b;
@@ -420,7 +420,14 @@ h3 {
         position: absolute;
         bottom: 0;
     }
-    #help-info .block-info button:hover {
+    #help-info .block-info .but-close-modal {
+        color: #fff;
+        padding: 4px;
+        background-color: #ec4b3b;
+        font-size: 13px;
+        border: 2px solid #fff;
+    }
+    #help-info .block-info .but-open-modal:hover, #help-info .block-info .but-close-modal:hover {
         color: #ec4b3b;
         background-color: #fff;
     }
@@ -499,7 +506,7 @@ h3 {
 .modal-content {
     background-color: #333;
 }
-.close, .close:hover {
+.but-close-modal, .but-close-modal:hover {
     opacity: 1;
 }
 .modal.in .modal-dialog {
@@ -571,5 +578,8 @@ h3 {
     }
     #contact .table-responsive {
         font-size: 12px;
+    }
+    .block-title {
+        min-height: 123px;
     }
 }
