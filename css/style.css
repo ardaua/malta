@@ -496,6 +496,31 @@ h3 {
     margin-top: 1%;
 }
 /*------кнопка узнать больше-------*/
+/*------кнопка узнать больше1-------*/
+#ta1{
+    height: 360px;
+    transition:all 1s;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+}
+.read-next1, .read-next1:focus  {
+    color: #fff;
+    background-color: #ec4b3b;
+    border-radius: 0;
+    padding: 7px 5px;
+    font-size: 17px;
+    border: 2px solid #fff;
+}
+.read-next1:hover {
+    color: #ec4b3b;
+    background-color: #fff;
+    font-weight: 700;
+}
+.but-read-next1, .photo > img {
+    margin-top: 1%;
+}
+/*------кнопка узнать больше1-------*/
 /*----------модальный блок---------*/
 .modal-body p {
     text-indent: 1.5em;
@@ -516,6 +541,10 @@ h3 {
 .modal.in .modal-dialog {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+#portfolio > .photo > img {
+    width: 100%;
+    max-height: 500px;
 }
 
 @media screen and (max-width: 991px) {
