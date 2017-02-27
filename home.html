@@ -13,6 +13,10 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
     <title>Тротуарная плитка ТМ МАЛЬТА&reg; Днепропетровск</title>
 </head>
 
@@ -332,43 +336,72 @@
 
 <div id="portfolio" class="wrapper">
     <h2>Портфолио</h2>
-    <div style="height: 100%;">
-        <div id="ta1" style="overflow:hidden">
-            <div class="photo">
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/1.jpeg" alt="portf_1">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/15.jpg" alt="portf_2">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/19.JPG" alt="portf_3">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/20.JPG" alt="portf_4">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/34.jpg" alt="portf_5">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/37.jpg" alt="portf_6">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/55.jpg" alt="portf_7">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/58.jpg" alt="portf_8">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/65.jpg" alt="portf_9">
-                </div>
-                <div class="col-md-6 portf-img">
-                    <img src="img/portfolio/72.jpg" alt="portf_10">
-                </div>
-            </div>
-        </div>
-        <p class="but-read-next1"><a class="btn btn-primary btn-lg read-next1" role="button" href="#">Еще фото</a></p>
-    </div>
+    <nav id="filter"></nav>
+
+    <section id="container">
+        <ul id="stage">
+            <li data-tags="Плитка Шагрень"><img src="img/shots/1.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/2.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик"><img src="img/shots/3.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Шагрень"><img src="img/shots/4.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик"><img src="img/shots/5.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик,Плитка Шагрень"><img src="img/shots/6.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/7.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень"><img src="img/shots/8.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик"><img src="img/shots/9.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень"><img src="img/shots/10.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/11.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/12.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Шагрень"><img src="img/shots/13.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик"><img src="img/shots/14.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Шагрень"><img src="img/shots/15.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик"><img src="img/shots/16.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик,Плитка Шагрень"><img src="img/shots/17.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень"><img src="img/shots/18.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Шагрень"><img src="img/shots/19.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/20.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Екатерининский камень,Плитка Антик"><img src="img/shots/21.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Шагрень"><img src="img/shots/22.jpg" alt="Иллюстрация" /></li>
+            <li data-tags="Плитка Антик,Плитка Шагрень"><img src="img/shots/23.jpg" alt="Иллюстрация" /></li>
+        </ul>
+    </section>
+    <!--<div style="height: 100%;">-->
+        <!--<div id="ta1" style="overflow:hidden">-->
+            <!--<div class="photo">-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/1.jpeg" alt="portf_1">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/15.jpg" alt="portf_2">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/19.JPG" alt="portf_3">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/20.JPG" alt="portf_4">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/34.jpg" alt="portf_5">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/37.jpg" alt="portf_6">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/55.jpg" alt="portf_7">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/58.jpg" alt="portf_8">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/65.jpg" alt="portf_9">-->
+                <!--</div>-->
+                <!--<div class="col-md-6 portf-img">-->
+                    <!--<img src="img/portfolio/72.jpg" alt="portf_10">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<p class="but-read-next1"><a class="btn btn-primary btn-lg read-next1" role="button" href="#">Еще фото</a></p>-->
+    <!--</div>-->
 </div>
 
 <div id="help-info" class="wrapper">
@@ -415,7 +448,7 @@
                     <p class="title-info">О тротуарной плитке ТМ МАЛЬТА&reg;</p>
                     <button data-toggle="modal" class="but-open-modal"  data-target="#myModal2">читать дальше</button>
                     <!-- Modal -->
-                    <div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-Плитка Шагрень" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -444,7 +477,7 @@
                         <p class="title-info">Преимущества цокольного камня ТМ Мальта&reg;</p>
                         <button data-toggle="modal" class="but-open-modal"  data-target="#myModal3">читать дальше</button>
                         <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade bs-example-modal-lg" id="myModal3" tabindex="-Плитка Шагрень" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -818,9 +851,12 @@
     </div>
 </footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
 <script src="js/fix_menu.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.quicksand.js"></script>
 
 <script type="text/javascript">
     //якоря
