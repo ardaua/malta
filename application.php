@@ -23,7 +23,7 @@ $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
-$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообщение с сайта Тепло-днепр</h2>\r\n";
+$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообщение с сайта Мальта-бетон</h2>\r\n";
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
